@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "name": "gfaraujosousa's pokeldn plugins",
+  "homepage": "https://github.com/gfaraujosousa/pokeldn-plugins",
+  "plugins": [
+    {
+      "id": "gfaraujosousa.same-trade-back",
+      "name": "Send the same one back",
+      "version": "1.0.0",
+      "description": "Trade a Pokemon and get the very same one back in that trade, so one that evolves by trade evolves on your console in a single trade. Works in every game pokeldn hosts a trade for.",
+      "author": "gfaraujosousa",
+      "api": "1.13",
+      "download": "https://github.com/gfaraujosousa/pokeldn-plugins/releases/download/same-trade-back-1.0.0/same-trade-back-1.0.0.pokeplugin",
+      "sha256": "c785e5c3620a3cd8bba6926376df907a5251c6b54d88522a36b1c9e028acaf04",
+      "size": 4723,
+      "homepage": "https://github.com/gfaraujosousa/pokeldn-plugins",
+      "icon": "https://raw.githubusercontent.com/gfaraujosousa/pokeldn-plugins/HEAD/plugins/same-trade-back/icon.png"
+    }
+  ]
+}
