@@ -36,14 +36,17 @@ You can also download any `.pokeplugin` file from [Releases](https://github.com/
 | Plugin | Games Supported | Highlights |
 |---|---|---|
 | [**Send the same one back**](#send-the-same-one-back) | All 8 pokeldn trade games (`FRLG`, `RSE`, `LGPE`, `SwSh`, `BDSP`, `PLA`, `SV`, `Z-A`) | Single-trade evolution — receive the exact Pokemon you offered back in one trade. |
-| [**Static Legendary Respawn**](#static-legendary-respawn-gen-3) | FireRed & LeafGreen (all 12 Switch builds) + Emerald / Emerald Swap | Reset encounter flags and puzzles for static legendaries without losing caught Pokemon or Pokedex data. |
-| [**Shiny Static Legendary RNG**](#shiny-static-legendary-rng-gen-3) | FireRed & LeafGreen (all 12 Switch builds) + Emerald / Emerald Swap | Advances `gRngValue` to the next legal Method 1 shiny state for your own TID/SID right before the encounter starts. |
-| [**Gen 3 QoL Pack**](#gen-3-qol-pack-r-toggle-turbo--key-rare-candy) | FireRed & LeafGreen (all 12 Switch builds) + Emerald / Emerald Swap | Tap **R** to toggle up to **8x** speed + reusable **Rare Candy** in Key Items + Mom restore after reboot (FRLG). |
+| [**Static Legendary Respawn**](#static-legendary-respawn-gen-3) | FireRed & LeafGreen (all 12 Switch builds) + Emerald *(experimental — see RSE warning)* | Reset encounter flags and puzzles for static legendaries without losing caught Pokemon or Pokedex data. |
+| [**Shiny Static Legendary RNG**](#shiny-static-legendary-rng-gen-3) | FireRed & LeafGreen (all 12 Switch builds) + Emerald *(experimental — see RSE warning)* | Advances `gRngValue` to the next legal Method 1 shiny state for your own TID/SID right before the encounter starts. |
+| [**Gen 3 QoL Pack**](#gen-3-qol-pack-r-toggle-turbo--key-rare-candy) | FireRed & LeafGreen (all 12 Switch builds) + Emerald *(experimental — see RSE warning)* | Tap **R** to toggle up to **8x** speed + reusable **Rare Candy** in Key Items + Mom restore after reboot (FRLG). |
 | [**Bielson Battle Event**](#bielson-battle-event-pallet-town) | FireRed & LeafGreen (`BPRE`, `BPGE`, `BPRF`, `BPGF`) | Persistent 6v6 Lv. 70 boss battle in Pallet Town with Master Ball reward, rematches, and safe remover. |
 
-> **Emerald & Emerald Swap note:** Ruby and Sapphire have no Wireless Adapter Mystery Gift menu, so Gen 3 Mystery Gift tools target **FireRed**, **LeafGreen**, and **Emerald** (including **Emerald Swap**). In packaged pokeldn releases where the RSE tab is hidden, every Gen 3 tool exposes a **Game** dropdown under **FireRed & LeafGreen** so you can select **Emerald (including Emerald Swap)** immediately; when RSE preview is enabled, dedicated tools also appear under **Ruby, Sapphire & Emerald**.
->
-> **Retail Switch Emerald Swap caveat:** In the current upstream `emerald-swap` Switch build (`1.2.0`), opening **Mystery Gift > Wonder Cards > Friend** inside Emerald on a retail stock Switch currently goes to a black screen before the console joins the host (a known upstream limitation of `pokeemerald_switch` on retail hardware; Mystery Gift works on FireRed/LeafGreen on retail consoles and on Emerald under emulation / LayeredFS).
+> [!WARNING]
+> **RSE / Emerald support is currently NOT working properly on retail Switch consoles (`emerald-swap`):**
+> - **Ruby & Sapphire** have no Wireless Adapter Mystery Gift menu.
+> - **Emerald (Emerald Swap):** In the current upstream `emerald-swap` Switch build (`1.2.0`), opening **Mystery Gift > Wonder Cards > Friend** inside Emerald on a stock retail Switch goes to a **black screen** before the console ever connects to pokeldn. Because of this upstream Mystery Gift limitation, the Gen 3 Mystery Gift plugins (**Static Legendary Respawn**, **Shiny Static Legendary RNG**, and **Gen 3 QoL Pack**) cannot currently be delivered to Emerald on retail consoles.
+> - **FireRed & LeafGreen** work normally on retail consoles. Emerald support is included as **experimental** (tested under emulation / LayeredFS) and is ready for when upstream `emerald-swap` fixes its retail Mystery Gift link or an official Switch release arrives.
+> - In packaged pokeldn releases where the RSE tab is hidden, each Gen 3 tool exposes a **Game** dropdown under **FireRed & LeafGreen**; when RSE preview is enabled, dedicated tools also appear under **Ruby, Sapphire & Emerald**.
 
 ---
 
@@ -70,6 +73,9 @@ Each game's tool runs pokeldn's built-in trade host in online mode and attaches 
 ---
 
 ## Static Legendary Respawn (Gen 3)
+
+> [!WARNING]
+> **RSE / Emerald status:** Not currently working on retail Switch consoles running `emerald-swap` due to the upstream Mystery Gift black screen. Fully supported on **FireRed & LeafGreen**; Emerald mode is experimental (emulation / LayeredFS only until Mystery Gift works on retail Emerald).
 
 Reset static legendary encounter flags and island puzzle counters so you can battle, capture, or shiny-hunt them again. Previously caught Pokemon in your party/PC and your Pokedex entries stay completely intact.
 
@@ -98,6 +104,9 @@ Reset static legendary encounter flags and island puzzle counters so you can bat
 
 ## Shiny Static Legendary RNG (Gen 3)
 
+> [!WARNING]
+> **RSE / Emerald status:** Not currently working on retail Switch consoles running `emerald-swap` due to the upstream Mystery Gift black screen. Fully supported on **FireRed & LeafGreen**; Emerald mode is experimental (emulation / LayeredFS only until Mystery Gift works on retail Emerald).
+
 Guarantees a legal **Method 1 shiny** static legendary under your save's own **TID/SID** without needing frame-perfect button presses.
 
 - **Authentic encounter generation:** Advances `gRngValue` to the first upcoming state that yields a shiny PID for your trainer IDs immediately before the game's original encounter creator runs. The game itself generates the Pokemon, IVs, nature, and fateful encounter marker.
@@ -122,6 +131,9 @@ Guarantees a legal **Method 1 shiny** static legendary under your save's own **T
 ---
 
 ## Gen 3 QoL Pack: R-Toggle Turbo & Key Rare Candy
+
+> [!WARNING]
+> **RSE / Emerald status:** Not currently working on retail Switch consoles running `emerald-swap` due to the upstream Mystery Gift black screen. Fully supported on **FireRed & LeafGreen**; Emerald mode is experimental (emulation / LayeredFS only until Mystery Gift works on retail Emerald).
 
 Combines two practical quality-of-life tools into one configurable Mystery Gift session:
 
