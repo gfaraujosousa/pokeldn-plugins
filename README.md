@@ -41,7 +41,9 @@ You can also download any `.pokeplugin` file from [Releases](https://github.com/
 | [**Gen 3 QoL Pack**](#gen-3-qol-pack-r-toggle-turbo--key-rare-candy) | FireRed & LeafGreen (all 12 Switch builds) + Emerald / Emerald Swap | Tap **R** to toggle up to **8x** speed + reusable **Rare Candy** in Key Items + Mom restore after reboot (FRLG). |
 | [**Bielson Battle Event**](#bielson-battle-event-pallet-town) | FireRed & LeafGreen (`BPRE`, `BPGE`, `BPRF`, `BPGF`) | Persistent 6v6 Lv. 70 boss battle in Pallet Town with Master Ball reward, rematches, and safe remover. |
 
-> **Emerald & Emerald Swap note:** Ruby and Sapphire have no Wireless Adapter Mystery Gift menu, so Gen 3 Mystery Gift tools target **FireRed**, **LeafGreen**, and **Emerald** (including **Emerald Swap** on a stock Switch). In packaged pokeldn releases where the RSE tab is hidden, every Gen 3 tool exposes a **Game** dropdown under **FireRed & LeafGreen** so you can select **Emerald (including Emerald Swap)** immediately; when RSE preview is enabled, dedicated tools also appear under **Ruby, Sapphire & Emerald**.
+> **Emerald & Emerald Swap note:** Ruby and Sapphire have no Wireless Adapter Mystery Gift menu, so Gen 3 Mystery Gift tools target **FireRed**, **LeafGreen**, and **Emerald** (including **Emerald Swap**). In packaged pokeldn releases where the RSE tab is hidden, every Gen 3 tool exposes a **Game** dropdown under **FireRed & LeafGreen** so you can select **Emerald (including Emerald Swap)** immediately; when RSE preview is enabled, dedicated tools also appear under **Ruby, Sapphire & Emerald**.
+>
+> **Retail Switch Emerald Swap caveat:** In the current upstream `emerald-swap` Switch build (`1.2.0`), opening **Mystery Gift > Wonder Cards > Friend** inside Emerald on a retail stock Switch currently goes to a black screen before the console joins the host (a known upstream limitation of `pokeemerald_switch` on retail hardware; Mystery Gift works on FireRed/LeafGreen on retail consoles and on Emerald under emulation / LayeredFS).
 
 ---
 
