@@ -1,64 +1,184 @@
+<div align="center">
+
 # pokeldn plugins
 
-Plugins for [pokeldn](https://github.com/Decryptu/pokeldn). They are not made, reviewed or supported by
-pokeldn; report problems here.
+**Third-party plugins for [pokeldn](https://github.com/Decryptu/pokeldn) — Gen 3 Mystery Gift tools, quality-of-life upgrades, custom events, and single-trade evolution support.**
+
+[![pokeldn API](https://img.shields.io/badge/pokeldn%20API-1.13%2B-3b82f6?style=flat-square)](https://github.com/Decryptu/pokeldn)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-10b981?style=flat-square)](LICENSE)
+[![Signing Key](https://img.shields.io/badge/Key-D7GL--JWBM--QDCN--JUBT-f59e0b?style=flat-square)](#install)
+
+</div>
+
+> **Note:** These plugins are community extensions and are not made, reviewed, or supported by pokeldn. Please report bugs or questions in this repository's Issues. Always back up your save before testing new Mystery Gift payloads on a console.
+
+---
 
 ## Install
 
-In pokeldn, open **Plugins** (bottom of the side menu), go to **Sources** and add:
+1. In **pokeldn**, open **Plugins** (bottom of the side menu) and switch to **Sources**.
+2. Add this repository:
 
-```
+```text
 gfaraujosousa/pokeldn-plugins
 ```
 
-Then install from **Browse**. Updates show up there too. You can also download a `.pokeplugin` from
-[Releases](https://github.com/gfaraujosousa/pokeldn-plugins/releases) and drop it on **Plugins > Installed**.
+3. Open **Browse** and click **Install** on any plugin you want. Updates will appear there automatically.
 
-Every package is signed with the key `D7GL-JWBM-QDCN-JUBT`. pokeldn shows that fingerprint on the install
-screen; if it shows another one, don't install it.
+You can also download any `.pokeplugin` file from [Releases](https://github.com/gfaraujosousa/pokeldn-plugins/releases) and drop it onto **Plugins > Installed**.
+
+> **Verify the signature:** Every release here is signed with key **`D7GL-JWBM-QDCN-JUBT`**. pokeldn displays that fingerprint on the install confirmation screen — if it ever shows a different fingerprint, do not install it.
+
+---
+
+## Plugin Catalog
+
+| Plugin | Games Supported | Highlights |
+|---|---|---|
+| [**Send the same one back**](#send-the-same-one-back) | All 8 pokeldn trade games (`FRLG`, `RSE`, `LGPE`, `SwSh`, `BDSP`, `PLA`, `SV`, `Z-A`) | Single-trade evolution — receive the exact Pokemon you offered back in one trade. |
+| [**Static Legendary Respawn**](#static-legendary-respawn-gen-3) | FireRed & LeafGreen (all 12 Switch builds) + Emerald / Emerald Swap | Reset encounter flags and puzzles for static legendaries without losing caught Pokemon or Pokedex data. |
+| [**Shiny Static Legendary RNG**](#shiny-static-legendary-rng-gen-3) | FireRed & LeafGreen (all 12 Switch builds) + Emerald / Emerald Swap | Advances `gRngValue` to the next legal Method 1 shiny state for your own TID/SID right before the encounter starts. |
+| [**Gen 3 QoL Pack**](#gen-3-qol-pack-r-toggle-turbo--key-rare-candy) | FireRed & LeafGreen (all 12 Switch builds) + Emerald / Emerald Swap | Tap **R** to toggle up to **8x** speed + reusable **Rare Candy** in Key Items + Mom restore after reboot (FRLG). |
+| [**Bielson Battle Event**](#bielson-battle-event-pallet-town) | FireRed & LeafGreen (`BPRE`, `BPGE`, `BPRF`, `BPGF`) | Persistent 6v6 Lv. 70 boss battle in Pallet Town with Master Ball reward, rematches, and safe remover. |
+
+> **Emerald & Emerald Swap note:** Ruby and Sapphire have no Wireless Adapter Mystery Gift menu, so Gen 3 Mystery Gift tools target **FireRed**, **LeafGreen**, and **Emerald** (including **Emerald Swap** on a stock Switch). In packaged pokeldn releases where the RSE tab is hidden, every Gen 3 tool exposes a **Game** dropdown under **FireRed & LeafGreen** so you can select **Emerald (including Emerald Swap)** immediately; when RSE preview is enabled, dedicated tools also appear under **Ruby, Sapphire & Emerald**.
+
+---
 
 ## Send the same one back
 
-Trade a Pokemon and get the very same one back in that trade. A Pokemon that evolves by trade
-(Kadabra, Machoke, Graveler, Haunter, Boldore, Gurdurr...) evolves on your console in a single trade,
-and you don't need a Pokemon to offer.
+Trade any Pokemon and receive the exact same Pokemon back in that same trade. Pokemon that evolve by trade (Kadabra, Machoke, Graveler, Haunter, Boldore, Gurdurr, Phantump, etc.) evolve directly on your console in a single trade, with no offer Pokemon needed.
 
-pokeldn's own **Send it back** takes two trades and needs a Pokemon of yours to hand over first. This
-one does it in one.
+- **Works across every game pokeldn hosts a trade for:** FireRed & LeafGreen, Ruby/Sapphire/Emerald, Let's Go Pikachu/Eevee, Sword & Shield, Brilliant Diamond & Shining Pearl, Legends: Arceus, Scarlet & Violet, and Legends: Z-A.
+- **Byte-for-byte identical:** Nothing is created or edited, and pokeldn saves a copy in its Received folder like any normal trade.
 
-Works in every game pokeldn hosts a trade for:
+### How to use
 
-- FireRed & LeafGreen
-- Ruby, Sapphire & Emerald
-- Let's Go, Pikachu! & Let's Go, Eevee!
-- Sword & Shield
-- Brilliant Diamond & Shining Pearl
-- Legends: Arceus
-- Scarlet & Violet
-- Legends: Z-A
+1. Open your game on pokeldn's **Games** page and pick **Trade: send the same one back**.
+2. Press **Start** and join the trade on your console as usual.
+3. Offer the Pokemon you want back and confirm — it returns immediately in that trade.
 
-### Use
+<details>
+<summary>How it works</summary>
 
-1. Install the plugin and open your game in pokeldn's **Games** page.
-2. Pick **Trade: send the same one back** and press Start.
-3. On the console, join the trade the same way as for pokeldn's own trade host.
-4. Offer the Pokemon you want back and confirm. It comes back in that trade. Offer another one to do it
-   again, or press Stop.
+Each game's tool runs pokeldn's built-in trade host in online mode and attaches a local mirror partner that echoes your console's own offer, confirmation, and (on Gen 3) party blocks and slot selection.
 
-On FireRed, LeafGreen, Ruby, Sapphire and Emerald the trade screen shows your own party on both sides;
-pick the Pokemon and the same slot is picked back.
+</details>
 
-The Pokemon you get back is byte for byte the one you sent. Nothing is created or changed, and pokeldn
-keeps a copy of what it received in its Received folder, like any trade.
+---
 
-### How it works
+## Static Legendary Respawn (Gen 3)
 
-Each game's tool runs pokeldn's built-in trade host for that game in its online mode, where the host
-offers whatever the far player's console offers. The plugin puts a partner in place of the far player
-that always offers what your own console offered.
+Reset static legendary encounter flags and island puzzle counters so you can battle, capture, or shiny-hunt them again. Previously caught Pokemon in your party/PC and your Pokedex entries stay completely intact.
 
-Needs pokeldn 0.66.8 or newer (plugin API 1.13).
+- **FireRed & LeafGreen (all 12 Switch builds):** Runs via native `CLI_RUN_BUFFER_SCRIPT` directly on SaveBlock1 — keeps your active Wonder Card and saved boosts untouched.
+- **Emerald (including Emerald Swap):** Delivers a portable Wonder Card whose Pokemon Center 2F delivery man executes standard GBA script opcodes (`CLEARFLAG` / `SETFLAG` / `SETVAR`) — zero ROM addresses required.
 
-## Source
+### How to use
 
-`plugins/` holds each plugin's source as it is packed. Licensed under the GNU AGPL v3, like pokeldn.
+1. Save **outside** the legendary's room (or outside Birth Island / Faraway Island).
+2. On pokeldn, pick **Respawn static legendaries**, choose your game and legendary (or **All**), and press **Start**.
+3. On the console: **Mystery Gift > Wonder Cards > Friend**, then select **POKELDN**.
+4. **FireRed / LeafGreen:** Continue your save, re-enter the legendary's map, and save.
+5. **Emerald:** Continue your save, talk to the delivery man on **2F of any Pokemon Center**, then save (for Kyogre/Groudon, visit Weather Institute 2F afterward to trigger abnormal weather).
+
+<details>
+<summary>Supported static encounters (FireRed / LeafGreen & Emerald)</summary>
+
+| Game | Available targets |
+|---|---|
+| **FireRed & LeafGreen** (EN, FR, DE, IT, ES, JP) | **All**, Articuno, Zapdos, Moltres, Mewtwo, Ho-Oh, Lugia, Deoxys (resets meteorite + triangle puzzle), Snorlax (Routes 12 & 16) |
+| **Emerald / Emerald Swap** | **All**, Regirock, Regice, Registeel, Kyogre, Groudon, Rayquaza, Latias / Latios (Southern Island), Ho-Oh, Lugia, Deoxys (resets triangle puzzle), Mew (Faraway Island) |
+
+</details>
+
+---
+
+## Shiny Static Legendary RNG (Gen 3)
+
+Guarantees a legal **Method 1 shiny** static legendary under your save's own **TID/SID** without needing frame-perfect button presses.
+
+- **Authentic encounter generation:** Advances `gRngValue` to the first upcoming state that yields a shiny PID for your trainer IDs immediately before the game's original encounter creator runs. The game itself generates the Pokemon, IVs, nature, and fateful encounter marker.
+- **Covers both event and field legendaries:** Intercepts `CreateEnemyEventMon` (Ho-Oh, Lugia, Deoxys, Mew, Southern Island Latias/Latios) and `setwildbattle` (Articuno, Zapdos, Moltres, Mewtwo, Snorlax, Regirock, Regice, Registeel, Kyogre, Groudon, Rayquaza) — choose a specific target or **Any static legendary**.
+- **Safety checks:** Refuses cleanly (`0xBAD0BAD0`) without writing RAM if the cartridge, revision, or ROM table signature does not match, or if another VBlank hook is active. Caps search at 262,144 states so it can never hang.
+
+### How to use
+
+1. Restart the game cleanly (do not combine with other RAM boosts in the same session).
+2. Open **Shiny static legendary (RNG)**, choose your game and target legendary, and press **Start**.
+3. On the console: **Mystery Gift > Wonder Cards > Friend**, pick **POKELDN**, and confirm `0x53484E59 MATCHES` in the log.
+4. Continue your save and trigger the encounter normally (you must already have normal access to the island/location). Capture and save as usual.
+
+<details>
+<summary>Compatibility & verification notes</summary>
+
+- Resident RAM hooks last until the game is closed or reset; saving does not write the hook into your save file.
+- Verified under Unicorn ARMv4T (`TI925T`) emulation across FRLG builds and Emerald dynamic-discovery fixtures; back up your save before first console use.
+
+</details>
+
+---
+
+## Gen 3 QoL Pack: R-Toggle Turbo & Key Rare Candy
+
+Combines two practical quality-of-life tools into one configurable Mystery Gift session:
+
+- **R-Toggle Turbo (2x / 3x / 4x / 6x / 8x):** Tap **R** once to toggle fast-forward ON or OFF (no need to hold the button). Starts OFF after install/restore, suppresses the R Help System on FRLG, and keeps scanline-budget (`228`), lag, and transition/fade guards active.
+- **Reusable Key-Item Rare Candy:** Preflight-scans all 30 Key Item slots before writing anything, encrypts quantity `1` with your save's own encryption key, reuses an existing slot if already present (no duplicates), and refuses cleanly (`0xBAD0BAD0`) if Key Items is full — never overwriting any item or touching ordinary Rare Candies.
+- **Mom Persistence (FireRed & LeafGreen):** Saves the turbo hook in `SaveBlock2` (`filler_B20`) and binds Mom in Pallet Town so talking to her after any restart restores R-toggle turbo (and still heals your party) without needing the ESP32 again.
+
+### How to use
+
+1. Keep at least **1 free slot in Key Items** (when Key-Item Rare Candy is enabled).
+2. Restart the game cleanly without other RAM boosts active.
+3. Open **QoL Pack: R-toggle turbo & Key Rare Candy**, choose your game, speed, and toggles, then press **Start**.
+4. On the console: **Mystery Gift > Wonder Cards > Friend**, pick **POKELDN**, and confirm `0x514F4C38 MATCHES`.
+5. Continue your save, verify the features, and save normally.
+
+<details>
+<summary>Persistence & Rare Candy notes</summary>
+
+- **Key-Item Rare Candy** is permanent in the save on both FRLG and Emerald. Open **Key Items > Rare Candy > USE**. Because `RemoveBagItem` looks in the regular Items pocket, the unit in Key Items is not deducted (any normal Rare Candies in your Items pocket are consumed first if present).
+- **After reboot:** On FireRed & LeafGreen (with Mom restore enabled), talk to Mom at home in Pallet Town to re-enable R-toggle turbo. On Emerald (whose `SaveBlock2` has no `filler_B20`), Key-Item Rare Candy stays permanently and R-toggle turbo can be re-sent for a new session.
+- Do not combine with other RAM boosts, shiny RNG hooks, or follower hooks in the same session.
+
+</details>
+
+---
+
+## Bielson Battle Event (Pallet Town)
+
+Adds a persistent **6-on-6 Level 70** boss battle against **Bielson** in Pallet Town for **FireRed & LeafGreen** (English & French Switch builds: `BPRE`, `BPGE`, `BPRF`, `BPGF`), plus a safe one-click **Remove** action.
+
+- **Persistent overworld NPC:** Binds to the man walking in southern Pallet Town near the water; changes his sprite to Red when spoken to and offers a full 6v6 Lv. 70 single battle (supports both **English** and **Portuguese** dialogue).
+- **Fair rules & reward:** Heals your party before and after the battle, awards **1 Master Ball once per save** (with full-bag pending retry — no need to win twice), allows unlimited rematches without duplicating the prize, and preserves any existing visiting trainer record across SaveBlock2 relocation.
+- **Safe remover:** Select **Remove Bielson battle event** to clear the RAM script binding cleanly (verifies the Pallet Town `3/0/2` binding header before clearing and keeps your Master Ball / reward progress).
+
+### How to use
+
+1. Back up your save, save in **Pallet Town**, and restart the game without other RAM boosts active.
+2. Open **Bielson Battle Event (Pallet Town)** under **FireRed & LeafGreen**, pick **Install** (or **Remove**) and dialogue language, then press **Start**.
+3. On the console: **Mystery Gift > Wonder Cards > Friend**, pick **POKELDN**, and confirm `0x4249454C MATCHES`.
+4. Continue your save and talk to the man in southern Pallet Town.
+
+<details>
+<summary>Bielson's Level 70 Gen 3 Team Roster</summary>
+
+| Pokemon | Nature | Held Item | Moves |
+|---|---|---|---|
+| **Typhlosion** | Timid | Charcoal | Fire Blast / Flamethrower / ThunderPunch / Hidden Power Grass (70) |
+| **Swellow** | Adamant | Choice Band | Double-Edge / Aerial Ace / Quick Attack / Steel Wing |
+| **Jirachi** | Timid | Leftovers | Calm Mind / Psychic / Thunderbolt / Ice Punch |
+| **Aipom** | Jolly | Silk Scarf | Aerial Ace / Double-Edge / Shadow Ball / Brick Break |
+| **Lapras** | Modest | Leftovers | Surf / Ice Beam / Thunderbolt / Confuse Ray |
+| **Gengar** | Timid | Lum Berry | Thunderbolt / Ice Punch / Fire Punch / Giga Drain |
+
+</details>
+
+---
+
+## Requirements & Source
+
+- Requires **pokeldn 0.66.8** or newer (plugin API `1.13`).
+- `plugins/` holds every plugin's exact source as packed into its `.pokeplugin` release.
+- Licensed under the **GNU AGPL v3** ([LICENSE](LICENSE)), like pokeldn.

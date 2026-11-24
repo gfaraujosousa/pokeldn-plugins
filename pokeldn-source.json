@@ -4,6 +4,58 @@
   "homepage": "https://github.com/gfaraujosousa/pokeldn-plugins",
   "plugins": [
     {
+      "id": "gfaraujosousa.bielson-pallet-battle",
+      "name": "Bielson Battle Event (Pallet Town)",
+      "version": "1.0.0",
+      "description": "Adds a persistent 6v6 Level 70 boss battle against Bielson in Pallet Town for FireRed & LeafGreen (English & French Switch builds). Heals your party before and after, rewards 1 Master Ball once per save, allows rematches, and includes a safe remover.",
+      "author": "gfaraujosousa",
+      "api": "1.13",
+      "download": "https://github.com/gfaraujosousa/pokeldn-plugins/releases/download/bielson-pallet-battle-1.0.0/bielson-pallet-battle-1.0.0.pokeplugin",
+      "sha256": "fb0c1b9df4b1d4c37d7ea7681ecfe78b4c259a602c7b6ce0f3120a8afe9ab246",
+      "size": 11673,
+      "homepage": "https://github.com/gfaraujosousa/pokeldn-plugins",
+      "icon": "https://raw.githubusercontent.com/gfaraujosousa/pokeldn-plugins/HEAD/plugins/bielson-pallet-battle/icon.png"
+    },
+    {
+      "id": "gfaraujosousa.gen3-legendary-respawn",
+      "name": "Static Legendary Respawn (Gen 3)",
+      "version": "1.0.0",
+      "description": "Respawn static legendaries in FireRed, LeafGreen (all 12 Switch builds) and Emerald (including Emerald Swap) so you can encounter or shiny-hunt them again without erasing caught Pokemon or Pokedex entries.",
+      "author": "gfaraujosousa",
+      "api": "1.13",
+      "download": "https://github.com/gfaraujosousa/pokeldn-plugins/releases/download/gen3-legendary-respawn-1.0.0/gen3-legendary-respawn-1.0.0.pokeplugin",
+      "sha256": "5b2d1fed595ccf8b663f8b54910248f6e1d9a26c86f9a280801acacfe07fa450",
+      "size": 10008,
+      "homepage": "https://github.com/gfaraujosousa/pokeldn-plugins",
+      "icon": "https://raw.githubusercontent.com/gfaraujosousa/pokeldn-plugins/HEAD/plugins/gen3-legendary-respawn/icon.png"
+    },
+    {
+      "id": "gfaraujosousa.gen3-qol-pack",
+      "name": "Gen 3 QoL: R-Toggle Turbo & Key Rare Candy",
+      "version": "1.0.0",
+      "description": "Quality-of-life pack for FireRed, LeafGreen (all 12 Switch builds) and Emerald (including Emerald Swap): tap R to toggle up to 8x speed (with lag/fade guards and persistent Mom restore on FRLG) plus a reusable Rare Candy placed safely in Key Items.",
+      "author": "gfaraujosousa",
+      "api": "1.13",
+      "download": "https://github.com/gfaraujosousa/pokeldn-plugins/releases/download/gen3-qol-pack-1.0.0/gen3-qol-pack-1.0.0.pokeplugin",
+      "sha256": "14d23a3cb39be2312a180011cc78a59362cd1cbba6783f7a96ba37db589b708d",
+      "size": 11584,
+      "homepage": "https://github.com/gfaraujosousa/pokeldn-plugins",
+      "icon": "https://raw.githubusercontent.com/gfaraujosousa/pokeldn-plugins/HEAD/plugins/gen3-qol-pack/icon.png"
+    },
+    {
+      "id": "gfaraujosousa.gen3-shiny-legendary-rng",
+      "name": "Shiny Static Legendary RNG (Gen 3)",
+      "version": "1.0.0",
+      "description": "Guarantees a legal Method 1 shiny static legendary in FireRed, LeafGreen (all 12 Switch builds) and Emerald (including Emerald Swap) by advancing gRngValue to the next shiny state for your save's own TID/SID right before the encounter generates.",
+      "author": "gfaraujosousa",
+      "api": "1.13",
+      "download": "https://github.com/gfaraujosousa/pokeldn-plugins/releases/download/gen3-shiny-legendary-rng-1.0.0/gen3-shiny-legendary-rng-1.0.0.pokeplugin",
+      "sha256": "026886acfa5847f40b7c10cd0c785ed9272f1e89d3aea55f3cf89992a13d73da",
+      "size": 11566,
+      "homepage": "https://github.com/gfaraujosousa/pokeldn-plugins",
+      "icon": "https://raw.githubusercontent.com/gfaraujosousa/pokeldn-plugins/HEAD/plugins/gen3-shiny-legendary-rng/icon.png"
+    },
+    {
       "id": "gfaraujosousa.same-trade-back",
       "name": "Send the same one back",
       "version": "1.0.0",
