@@ -32,13 +32,13 @@
     {
       "id": "gfaraujosousa.gen3-qol-pack",
       "name": "Gen 3 QoL: R-Toggle Turbo & Key Rare Candy",
-      "version": "1.0.1",
-      "description": "Quality-of-life pack for FireRed, LeafGreen (all 12 Switch builds) and Emerald (including Emerald Swap): tap R to toggle up to 8x speed (with lag/fade guards and persistent Mom restore on FRLG) plus a reusable Rare Candy placed safely in Key Items.",
+      "version": "1.0.3",
+      "description": "Quality-of-life pack for FireRed, LeafGreen (all 12 Switch builds) and Emerald (including Emerald Swap): tap R to toggle up to 8x speed (with lag/fade guards and persistent restore via Mom on FRLG or the 2F Mystery Gift Delivery Man on Emerald) plus a reusable Rare Candy placed safely in Key Items.",
       "author": "gfaraujosousa",
       "api": "1.13",
-      "download": "https://github.com/gfaraujosousa/pokeldn-plugins/releases/download/gen3-qol-pack-1.0.1/gen3-qol-pack-1.0.1.pokeplugin",
-      "sha256": "e17ee1dd842c9429af6b0d8234d3636113eee3119948fb867a243a33862ec08b",
-      "size": 11988,
+      "download": "https://github.com/gfaraujosousa/pokeldn-plugins/releases/download/gen3-qol-pack-1.0.3/gen3-qol-pack-1.0.3.pokeplugin",
+      "sha256": "ef893cdb4453e7575c1480a9dd8f3a91abda2f9e4e5a967c1b5df29f87505dd0",
+      "size": 14187,
       "homepage": "https://github.com/gfaraujosousa/pokeldn-plugins",
       "icon": "https://raw.githubusercontent.com/gfaraujosousa/pokeldn-plugins/HEAD/plugins/gen3-qol-pack/icon.png"
     },
