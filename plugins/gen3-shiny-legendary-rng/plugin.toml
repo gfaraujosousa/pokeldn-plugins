@@ -1,0 +1,9 @@
+id = "gfaraujosousa.gen3-shiny-legendary-rng"
+name = "Shiny Static Legendary RNG (Gen 3)"
+version = "1.0.2"
+author = "gfaraujosousa"
+description = "Guarantees a legal Method 1 shiny static legendary in FireRed, LeafGreen (all 12 Switch builds) and Emerald (including Emerald Swap) by advancing gRngValue to the next shiny state for your save's own TID/SID right before the encounter generates."
+homepage = "https://github.com/gfaraujosousa/pokeldn-plugins"
+api = "1.13"
+icon = "icon.png"
+exclude = ["__pycache__"]

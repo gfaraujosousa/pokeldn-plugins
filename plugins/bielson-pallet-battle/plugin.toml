@@ -1,0 +1,9 @@
+id = "gfaraujosousa.bielson-pallet-battle"
+name = "Bielson Battle Event (Pallet Town)"
+version = "1.0.1"
+author = "gfaraujosousa"
+description = "Adds a persistent 6v6 Level 70 boss battle against Bielson in Pallet Town for FireRed & LeafGreen (English & French Switch builds). Heals your party before and after, rewards 1 Master Ball once per save, allows rematches, and includes a safe remover."
+homepage = "https://github.com/gfaraujosousa/pokeldn-plugins"
+api = "1.13"
+icon = "icon.png"
+exclude = ["__pycache__"]

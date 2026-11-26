@@ -1,6 +1,6 @@
 id = "gfaraujosousa.same-trade-back"
 name = "Send the same one back"
-version = "1.0.0"
+version = "1.0.1"
 author = "gfaraujosousa"
 description = "Trade a Pokemon and get the very same one back in that trade, so one that evolves by trade evolves on your console in a single trade. Works in every game pokeldn hosts a trade for."
 homepage = "https://github.com/gfaraujosousa/pokeldn-plugins"

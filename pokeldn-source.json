@@ -6,67 +6,67 @@
     {
       "id": "gfaraujosousa.bielson-pallet-battle",
       "name": "Bielson Battle Event (Pallet Town)",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Adds a persistent 6v6 Level 70 boss battle against Bielson in Pallet Town for FireRed & LeafGreen (English & French Switch builds). Heals your party before and after, rewards 1 Master Ball once per save, allows rematches, and includes a safe remover.",
       "author": "gfaraujosousa",
       "api": "1.13",
-      "download": "https://github.com/gfaraujosousa/pokeldn-plugins/releases/download/bielson-pallet-battle-1.0.0/bielson-pallet-battle-1.0.0.pokeplugin",
-      "sha256": "fb0c1b9df4b1d4c37d7ea7681ecfe78b4c259a602c7b6ce0f3120a8afe9ab246",
-      "size": 11673,
+      "download": "https://github.com/gfaraujosousa/pokeldn-plugins/releases/download/bielson-pallet-battle-1.0.1/bielson-pallet-battle-1.0.1.pokeplugin",
+      "sha256": "b76102cee9ab80d3368699488a7fa5a08eabbf157923c2db6842c5368396a619",
+      "size": 30107,
       "homepage": "https://github.com/gfaraujosousa/pokeldn-plugins",
-      "icon": "https://raw.githubusercontent.com/gfaraujosousa/pokeldn-plugins/HEAD/plugins/bielson-pallet-battle/icon.png"
+      "icon": "https://raw.githubusercontent.com/gfaraujosousa/pokeldn-plugins/bielson-pallet-battle-1.0.1/plugins/bielson-pallet-battle/icon.png"
     },
     {
       "id": "gfaraujosousa.gen3-legendary-respawn",
       "name": "Static Legendary Respawn (Gen 3)",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Respawn static legendaries in FireRed, LeafGreen (all 12 Switch builds) and Emerald (including Emerald Swap) so you can encounter or shiny-hunt them again without erasing caught Pokemon or Pokedex entries.",
       "author": "gfaraujosousa",
       "api": "1.13",
-      "download": "https://github.com/gfaraujosousa/pokeldn-plugins/releases/download/gen3-legendary-respawn-1.0.0/gen3-legendary-respawn-1.0.0.pokeplugin",
-      "sha256": "5b2d1fed595ccf8b663f8b54910248f6e1d9a26c86f9a280801acacfe07fa450",
-      "size": 10008,
+      "download": "https://github.com/gfaraujosousa/pokeldn-plugins/releases/download/gen3-legendary-respawn-1.0.1/gen3-legendary-respawn-1.0.1.pokeplugin",
+      "sha256": "656f504c5ea6eefe668995e75cb724c6540185b18843fc408ba03b720c15bcd5",
+      "size": 27772,
       "homepage": "https://github.com/gfaraujosousa/pokeldn-plugins",
-      "icon": "https://raw.githubusercontent.com/gfaraujosousa/pokeldn-plugins/HEAD/plugins/gen3-legendary-respawn/icon.png"
+      "icon": "https://raw.githubusercontent.com/gfaraujosousa/pokeldn-plugins/gen3-legendary-respawn-1.0.1/plugins/gen3-legendary-respawn/icon.png"
     },
     {
       "id": "gfaraujosousa.gen3-qol-pack",
       "name": "Gen 3 QoL: R-Toggle Turbo & Key Rare Candy",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "description": "Quality-of-life pack for FireRed, LeafGreen (all 12 Switch builds) and Emerald (including Emerald Swap): tap R to toggle up to 8x speed (with lag/fade guards and persistent restore via Mom on FRLG or the 2F Mystery Gift Delivery Man on Emerald) plus a reusable Rare Candy placed safely in Key Items.",
       "author": "gfaraujosousa",
       "api": "1.13",
-      "download": "https://github.com/gfaraujosousa/pokeldn-plugins/releases/download/gen3-qol-pack-1.0.3/gen3-qol-pack-1.0.3.pokeplugin",
-      "sha256": "ef893cdb4453e7575c1480a9dd8f3a91abda2f9e4e5a967c1b5df29f87505dd0",
-      "size": 14187,
+      "download": "https://github.com/gfaraujosousa/pokeldn-plugins/releases/download/gen3-qol-pack-1.0.4/gen3-qol-pack-1.0.4.pokeplugin",
+      "sha256": "abed0f30c032e07f40311a2945e78956ebc410cca9fdca13b3644e9ffbe02c8d",
+      "size": 31611,
       "homepage": "https://github.com/gfaraujosousa/pokeldn-plugins",
-      "icon": "https://raw.githubusercontent.com/gfaraujosousa/pokeldn-plugins/HEAD/plugins/gen3-qol-pack/icon.png"
+      "icon": "https://raw.githubusercontent.com/gfaraujosousa/pokeldn-plugins/gen3-qol-pack-1.0.4/plugins/gen3-qol-pack/icon.png"
     },
     {
       "id": "gfaraujosousa.gen3-shiny-legendary-rng",
       "name": "Shiny Static Legendary RNG (Gen 3)",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "description": "Guarantees a legal Method 1 shiny static legendary in FireRed, LeafGreen (all 12 Switch builds) and Emerald (including Emerald Swap) by advancing gRngValue to the next shiny state for your save's own TID/SID right before the encounter generates.",
       "author": "gfaraujosousa",
       "api": "1.13",
-      "download": "https://github.com/gfaraujosousa/pokeldn-plugins/releases/download/gen3-shiny-legendary-rng-1.0.1/gen3-shiny-legendary-rng-1.0.1.pokeplugin",
-      "sha256": "56422806236d88c2bd3c1bcc703ab4d5ab7ba496038ce3b8de802b8532ee205a",
-      "size": 11605,
+      "download": "https://github.com/gfaraujosousa/pokeldn-plugins/releases/download/gen3-shiny-legendary-rng-1.0.2/gen3-shiny-legendary-rng-1.0.2.pokeplugin",
+      "sha256": "308ad5e76b325631100b6e1b22eec8ae668adaa7901ad708f7e247d69584a594",
+      "size": 29557,
       "homepage": "https://github.com/gfaraujosousa/pokeldn-plugins",
-      "icon": "https://raw.githubusercontent.com/gfaraujosousa/pokeldn-plugins/HEAD/plugins/gen3-shiny-legendary-rng/icon.png"
+      "icon": "https://raw.githubusercontent.com/gfaraujosousa/pokeldn-plugins/gen3-shiny-legendary-rng-1.0.2/plugins/gen3-shiny-legendary-rng/icon.png"
     },
     {
       "id": "gfaraujosousa.same-trade-back",
       "name": "Send the same one back",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Trade a Pokemon and get the very same one back in that trade, so one that evolves by trade evolves on your console in a single trade. Works in every game pokeldn hosts a trade for.",
       "author": "gfaraujosousa",
       "api": "1.13",
-      "download": "https://github.com/gfaraujosousa/pokeldn-plugins/releases/download/same-trade-back-1.0.0/same-trade-back-1.0.0.pokeplugin",
-      "sha256": "c785e5c3620a3cd8bba6926376df907a5251c6b54d88522a36b1c9e028acaf04",
-      "size": 4723,
+      "download": "https://github.com/gfaraujosousa/pokeldn-plugins/releases/download/same-trade-back-1.0.1/same-trade-back-1.0.1.pokeplugin",
+      "sha256": "d4520abd6c0b52955dc906a11fd7ccf5e2729d078daaaafe8eb9747749480257",
+      "size": 23734,
       "homepage": "https://github.com/gfaraujosousa/pokeldn-plugins",
-      "icon": "https://raw.githubusercontent.com/gfaraujosousa/pokeldn-plugins/HEAD/plugins/same-trade-back/icon.png"
+      "icon": "https://raw.githubusercontent.com/gfaraujosousa/pokeldn-plugins/same-trade-back-1.0.1/plugins/same-trade-back/icon.png"
     }
   ]
 }

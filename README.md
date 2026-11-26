@@ -2,44 +2,45 @@
 
 # pokeldn plugins
 
-**Third-party plugins for [pokeldn](https://github.com/Decryptu/pokeldn) — Gen 3 Mystery Gift tools, quality-of-life upgrades, custom events, and single-trade evolution support.**
+**Mystery Gifts, legendary hunts, and link trades for [pokeldn](https://github.com/Decryptu/pokeldn).**
 
-[![pokeldn API](https://img.shields.io/badge/pokeldn%20API-1.13%2B-3b82f6?style=flat-square)](https://github.com/Decryptu/pokeldn)
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-10b981?style=flat-square)](LICENSE)
-[![Signing Key](https://img.shields.io/badge/Key-D7GL--JWBM--QDCN--JUBT-f59e0b?style=flat-square)](#install)
+<p>
+  <a href="#send-the-same-one-back"><img src="plugins/same-trade-back/icon.png" width="68" height="68" alt="Send the same one back"></a>
+  <a href="#static-legendary-respawn-gen-3"><img src="plugins/gen3-legendary-respawn/icon.png" width="68" height="68" alt="Static Legendary Respawn"></a>
+  <a href="#shiny-static-legendary-rng-gen-3"><img src="plugins/gen3-shiny-legendary-rng/icon.png" width="68" height="68" alt="Shiny Static Legendary RNG"></a>
+  <a href="#gen-3-qol-pack-r-toggle-turbo--key-rare-candy"><img src="plugins/gen3-qol-pack/icon.png" width="68" height="68" alt="Gen 3 QoL Pack"></a>
+  <a href="#bielson-battle-event-pallet-town"><img src="plugins/bielson-pallet-battle/icon.png" width="68" height="68" alt="Bielson Battle Event"></a>
+</p>
+
+[**Install**](#install) · [**Plugin catalog**](#plugin-catalog) · [**Releases**](https://github.com/gfaraujosousa/pokeldn-plugins/releases)
 
 </div>
-
-> **Note:** These plugins are community extensions and are not made, reviewed, or supported by pokeldn. Please report bugs or questions in this repository's Issues. Always back up your save before testing new Mystery Gift payloads on a console.
 
 ---
 
 ## Install
 
-1. In **pokeldn**, open **Plugins** (bottom of the side menu) and switch to **Sources**.
-2. Add this repository:
+1. In **pokeldn**, open **Plugins → Sources**.
+2. Add `gfaraujosousa/pokeldn-plugins`.
+3. Open **Browse** and select **Install** next to the plugin you want. Available updates also appear in **Browse**.
 
-```text
-gfaraujosousa/pokeldn-plugins
-```
+To install by file, download a `.pokeplugin` from [Releases](https://github.com/gfaraujosousa/pokeldn-plugins/releases) and import it from **Plugins → Installed**.
 
-3. Open **Browse** and click **Install** on any plugin you want. Updates will appear there automatically.
-
-You can also download any `.pokeplugin` file from [Releases](https://github.com/gfaraujosousa/pokeldn-plugins/releases) and drop it onto **Plugins > Installed**.
-
-> **Verify the signature:** Every release here is signed with key **`D7GL-JWBM-QDCN-JUBT`**. pokeldn displays that fingerprint on the install confirmation screen — if it ever shows a different fingerprint, do not install it.
-
----
+> [!TIP]
+> Check for **`D7GL-JWBM-QDCN-JUBT`** on the install confirmation screen. All releases in this repository use that signing key.
 
 ## Plugin Catalog
 
-| Plugin | Games Supported | Highlights |
+| Plugin | Games | What it does |
 |---|---|---|
-| [**Send the same one back**](#send-the-same-one-back) | All 8 pokeldn trade games (`FRLG`, `RSE`, `LGPE`, `SwSh`, `BDSP`, `PLA`, `SV`, `Z-A`) | Single-trade evolution — receive the exact Pokemon you offered back in one trade. |
-| [**Static Legendary Respawn**](#static-legendary-respawn-gen-3) | FireRed & LeafGreen (all 12 Switch builds) + Emerald / Emerald Swap | Reset encounter flags and puzzles for static legendaries without losing caught Pokemon or Pokedex data. |
-| [**Shiny Static Legendary RNG**](#shiny-static-legendary-rng-gen-3) | FireRed & LeafGreen (all 12 Switch builds) + Emerald / Emerald Swap | Advances `gRngValue` to the next legal Method 1 shiny state for your own TID/SID right before the encounter starts. |
-| [**Gen 3 QoL Pack**](#gen-3-qol-pack-r-toggle-turbo--key-rare-candy) | FireRed & LeafGreen (all 12 Switch builds) + Emerald / Emerald Swap | Tap **R** to toggle up to **8x** speed + reusable **Rare Candy** in Key Items + Mom restore after reboot (FRLG). |
-| [**Bielson Battle Event**](#bielson-battle-event-pallet-town) | FireRed & LeafGreen (`BPRE`, `BPGE`, `BPRF`, `BPGF`) | Persistent 6v6 Lv. 70 boss battle in Pallet Town with Master Ball reward, rematches, and safe remover. |
+| [**Send the same one back**](#send-the-same-one-back) | All eight pokeldn trade games | Evolve a Pokémon by getting the one you offered back in a single trade. |
+| [**Static Legendary Respawn**](#static-legendary-respawn-gen-3) | FireRed, LeafGreen, Emerald, Emerald Swap | Reset static encounters so you can battle or catch a legendary again. |
+| [**Shiny Static Legendary RNG**](#shiny-static-legendary-rng-gen-3) | FireRed, LeafGreen, Emerald, Emerald Swap | Hunt a Method 1 shiny using your own trainer IDs. |
+| [**Gen 3 QoL Pack**](#gen-3-qol-pack-r-toggle-turbo--key-rare-candy) | FireRed, LeafGreen, Emerald, Emerald Swap | Toggle up to **8×** speed with **R** and use a reusable Rare Candy from Key Items. |
+| [**Bielson Battle Event**](#bielson-battle-event-pallet-town) | FireRed and LeafGreen (English and French Switch builds) | Challenge Bielson's Lv. 70 team in Pallet Town and earn a Master Ball. |
+
+> [!IMPORTANT]
+> Back up your save before trying a new Mystery Gift on your console.
 
 > [!NOTE]
 > **Emerald & Emerald Swap notes:**
@@ -132,7 +133,8 @@ Combines two practical quality-of-life tools into one configurable Mystery Gift 
 
 - **R-Toggle Turbo (2x / 3x / 4x / 6x / 8x):** Tap **R** once to toggle fast-forward ON or OFF (no need to hold the button). Starts OFF after install/restore, suppresses the R Help System on FRLG, and keeps scanline-budget (`228`), lag, and transition/fade guards active.
 - **Reusable Key-Item Rare Candy:** Preflight-scans all 30 Key Item slots before writing anything, encrypts quantity `1` with your save's own encryption key, reuses an existing slot if already present (no duplicates), and refuses cleanly (`0xBAD0BAD0`) if Key Items is full — never overwriting any item or touching ordinary Rare Candies.
-- **Mom Persistence (FireRed & LeafGreen):** Saves the turbo hook in `SaveBlock2` (`filler_B20`) and binds Mom in Pallet Town so talking to her after any restart restores R-toggle turbo (and still heals your party) without needing the ESP32 again.
+- **Turbo restore (FireRed & LeafGreen):** Saves the turbo hook in `SaveBlock2` (`filler_B20`) and binds Mom in Pallet Town so talking to her after any restart restores R-toggle turbo (and still heals your party) without needing the ESP32 again.
+- **Turbo restore (Emerald):** With restore enabled, talk to the Mystery Gift delivery man on **2F of any Pokémon Center** after a restart.
 
 ### How to use
 
@@ -146,7 +148,7 @@ Combines two practical quality-of-life tools into one configurable Mystery Gift 
 <summary>Persistence & Rare Candy notes</summary>
 
 - **Key-Item Rare Candy** is permanent in the save on both FRLG and Emerald. Open **Key Items > Rare Candy > USE**. Because `RemoveBagItem` looks in the regular Items pocket, the unit in Key Items is not deducted (any normal Rare Candies in your Items pocket are consumed first if present).
-- **After reboot:** On FireRed & LeafGreen (with Mom restore enabled), talk to Mom at home in Pallet Town to re-enable R-toggle turbo. On Emerald (whose `SaveBlock2` has no `filler_B20`), Key-Item Rare Candy stays permanently and R-toggle turbo can be re-sent for a new session.
+- **After reboot:** On FireRed & LeafGreen (with Mom restore enabled), talk to Mom at home in Pallet Town to re-enable R-toggle turbo. On Emerald, talk to the Mystery Gift delivery man on **2F of any Pokémon Center** to restore turbo. The Key-Item Rare Candy stays in your save across restarts.
 - Do not combine with other RAM boosts, shiny RNG hooks, or follower hooks in the same session.
 
 </details>
@@ -187,5 +189,6 @@ Adds a persistent **6-on-6 Level 70** boss battle against **Bielson** in Pallet 
 ## Requirements & Source
 
 - Requires **pokeldn 0.66.8** or newer (plugin API `1.13`).
-- `plugins/` holds every plugin's exact source as packed into its `.pokeplugin` release.
+- Browse the current public source in [`plugins/`](plugins/).
+- These community plugins are maintained here. [Report a plugin issue](https://github.com/gfaraujosousa/pokeldn-plugins/issues)
 - Licensed under the **GNU AGPL v3** ([LICENSE](LICENSE)), like pokeldn.

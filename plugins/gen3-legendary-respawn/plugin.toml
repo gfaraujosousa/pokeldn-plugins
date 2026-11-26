@@ -1,0 +1,9 @@
+id = "gfaraujosousa.gen3-legendary-respawn"
+name = "Static Legendary Respawn (Gen 3)"
+version = "1.0.1"
+author = "gfaraujosousa"
+description = "Respawn static legendaries in FireRed, LeafGreen (all 12 Switch builds) and Emerald (including Emerald Swap) so you can encounter or shiny-hunt them again without erasing caught Pokemon or Pokedex entries."
+homepage = "https://github.com/gfaraujosousa/pokeldn-plugins"
+api = "1.13"
+icon = "icon.png"
+exclude = ["__pycache__"]
